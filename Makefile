@@ -17,4 +17,4 @@ migration:
 # Usage: make db-push
 #        SUPABASE_DB_PASSWORD=your-password make db-push
 db-push:
-	supabase db push
+	supabase db push --remote
