@@ -1,0 +1,69 @@
+# ---- Secrets / environment ----
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# ---- Supabase ----
+# (supabase/.gitignore already ignores .temp and .branches)
+# Local-only dev override; commit config.toml and migrations/ instead.
+supabase/.env
+supabase/seed.local.sql
+
+# ---- OS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Desktop.ini
+
+# ---- Editors / IDEs ----
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# ---- Claude Code (local, per-machine) ----
+.claude/settings.local.json
+CLAUDE.local.md
+
+# ---- Logs / temp ----
+*.log
+logs/
+tmp/
+.cache/
+
+# ---- Node / TypeScript ----
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.coverage
+htmlcov/
